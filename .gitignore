@@ -12,3 +12,5 @@
 
 open_brewery_db.iml
 .idea
+
+*.gem
