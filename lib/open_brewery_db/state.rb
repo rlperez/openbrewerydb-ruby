@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class StateALABAMA
+class State
   ALABAMA = 'alabama'
   ALASKA = 'alaska'
   ARIZONA = 'arizona'
