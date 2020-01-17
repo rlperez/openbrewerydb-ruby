@@ -1,4 +1,6 @@
-require "open_brewery_db/version"
+# frozen_string_literal: true
+
+require 'open_brewery_db/version'
 
 module OpenBreweryDb
   class Error < StandardError; end
