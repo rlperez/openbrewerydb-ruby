@@ -82,10 +82,7 @@ RSpec.describe Brewery do
   end
 
   it 'Marshalls list from JSON' do
-    breweries = JSON.parse(brewery_list).map { |b|
-      brewery = Brewery.new
-      brewery.from_json(b.to_json)
-    }
+    breweries = Brewery.many(brewery_list)
     expect(breweries.length).to eq(2)
   end
 end

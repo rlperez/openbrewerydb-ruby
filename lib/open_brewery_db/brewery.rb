@@ -12,4 +12,10 @@ class Brewery
   def attributes
     instance_values
   end
+
+  def self.many(brewery_list)
+    JSON.parse(brewery_list).
+        map(&:to_json).
+        map(&Brewery.new.method(:from_json))
+  end
 end
